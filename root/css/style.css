@@ -1,9 +1,5 @@
-body {
-    background-color: #071013;
-}
-
-body.image {
-    background-image: url(../images/background.png);
+:root {
+    --black: #071013
 }
 
 @property --gradient-angle {
@@ -11,6 +7,38 @@ body.image {
     initial-value: 0deg;
     inherits: false;
 }
+
+body {
+    background-color: var(--black);
+}
+
+body.image {
+    background-image: url(../images/background.png);
+}
+
+.title-container {
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+
+    position: relative;
+}
+
+
+.title-container::before {
+    width: 110%;
+    height: 110%;
+    inset: -5%;
+    background-image: url(../images/lens-flare.jpg);
+    background-color: transparent;
+    background-position: 45% 77%;
+    background-size: 105%;
+    filter: blur(0.1rem);
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
 
 h1.title {
     color: white;
@@ -84,7 +112,7 @@ h1.title:hover {
     background: conic-gradient(
         from var(--gradient-angle),
         hsla(12, 78%, 47%, 1),
-        hsla(203, 92%, 55%, 1),
+        rgb(8, 87, 136),
         hsla(12, 78%, 47%, 1)
     );
     border-radius: inherit;
@@ -123,7 +151,7 @@ h2.title {
 }
 
 .design-container {
-    background-color: #071013;
+    background-color: var(--black);
     margin: 2rem;
     width: 80vw;
     height: 80vh;
