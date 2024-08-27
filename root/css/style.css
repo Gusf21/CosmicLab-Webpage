@@ -161,15 +161,6 @@ h1.title:hover {
     gap: 2%;
 }
 
-<<<<<<< HEAD
-.design-container {
-    background-color: #7e9181;
-    margin: 2rem;
-    width: 80vw;
-    height: 80vh;
-    border-radius: 20px;
-}
-=======
 .design-panel {
     position: relative;
     width: 100%;
@@ -177,4 +168,3 @@ h1.title:hover {
     border-radius: 1rem;
     background-color: var(--white);
 }
->>>>>>> 09f55af35939caf1cc47e63f6d1fb333c26bc102
